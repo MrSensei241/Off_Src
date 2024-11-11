@@ -1,0 +1,32 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="G2PatchMaker.client"
+	x:Name="UserControl"
+	d:DesignWidth="640" d:DesignHeight="480">
+
+	<Grid x:Name="LayoutRoot">
+		<Grid Background="#FF595959" Margin="0">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition/>
+			</Grid.ColumnDefinitions>
+			<Grid x:Name="DataGrid">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="0.4*"/>
+					<ColumnDefinition Width="0.6*"/>
+				</Grid.ColumnDefinitions>
+				<ListBox x:Name="ReleaseListBox" Margin="2,8,8,52" KeyDown="ReleaseListBox_KeyDown" Drop="ReleaseListBox_Drop" FontSize="10.667" Grid.Column="1"/>
+				<ListBox x:Name="dataListBox" Margin="8,8,2,52" Drop="dataListBox_Drop" PreviewKeyDown="dataListBox_PreviewKeyDown" FontSize="10.667"/>
+				<Grid VerticalAlignment="Bottom" Height="52" Grid.ColumnSpan="2">
+					<Button x:Name="DataExprotBt" Margin="8,0,0,8" VerticalAlignment="Bottom" Height="36" Content="풀 패치 데이터 추출" HorizontalAlignment="Left" Width="125" Click="DataExprotBt_Click" FontSize="10.667"/>
+					<Button x:Name="DataDiffBt" Margin="137,0,0,8" VerticalAlignment="Bottom" Height="36" Content="부분 패치 데이터 추출" Click="DataDiffBt_Click" FontSize="10.667" HorizontalAlignment="Left" Width="140"/>
+					<Button x:Name="DataFullBt" Margin="0,0,132,8" VerticalAlignment="Bottom" Height="36" Content="풀 패치 만들기" Click="DataFullBt_Click" HorizontalAlignment="Right" Width="105" FontSize="10.667" />
+					<Button x:Name="DataPartialBt" Margin="0,0,8,8" VerticalAlignment="Bottom" Height="36" Content="부분 패치 만들기" HorizontalAlignment="Right" Width="120" Click="DataPartialBt_Click" FontSize="10.667"/>
+				</Grid>
+			</Grid>
+		</Grid>
+	</Grid>
+</UserControl>
