@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="FInal Release_xignCode|Win32">
+      <Configuration>FInal Release_xignCode</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{26403F10-5EA4-4677-BC73-D782035614D6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>NexonGLMClient</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='FInal Release_xignCode|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='FInal Release_xignCode|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\bin\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='FInal Release_xignCode|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\bin\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;NEXONGLMCLIENT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../ExternLib/GameLogManager</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;NEXONGLMCLIENT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../ExternLib/GameLogManager</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4100;4819;4800;</DisableSpecificWarnings>
+      <TreatSpecificWarningsAsErrors>4717;4189;4130;4189;4701;4389;4245;4238;4018;</TreatSpecificWarningsAsErrors>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>../ExternLib/GameLogManager/lib;../ExternLib/boost/stage86/lib;../ExternLib/Unicows;../ExternLib/EMotionFX3_9/Core/Bin;../ExternLib/EMotionFX3_9/Bin;../ExternLib/Core/Bin;../ExternLib/FMOD/api/lib;../ExternLib/Zlib/Bin;../ExternLib/Blowfish/Bin;../ExternLib/FreeType/Lib;../ExternLib/XTrap;../ExternLib/Opcode/Bin;../ExternLib/GraphiTE/Source/lib;../ExternLib/tinyxml2/lib;../ExternLib/VLD/lib;../ExternLib/SpeedTree/Lib/Windows/VC10;../ExternLib/google/tcmalloc/lib;../ExternLib/PerfSdk/lib;../ExternLib/logging_apache/apr/lib;../ExternLib/logging_apache/apr-util/lib;../ExternLib/logging_apache/apr-util/xml/expat/lib;../ExternLib/ForkParticle/lib;../ExternLib/google/protobuf/lib;../lib;../ExternLib/DirectX9/Lib;../ExternLib/tinyxml/lib;../ExternLib/FMOD/apidesigner/lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>winmm.lib;version.lib;NPS.lib;NGClient.lib;odbc32.lib;dbghelp.lib;odbccp32.lib;zlibstat_release.lib;imm32.lib;unicows.lib;fmodex_vc.lib;fmod_event.lib;dinput8.lib;dxguid.lib;wininet.lib;ws2_32.lib;d3dx9.lib;d3d9.lib;NVPerfSDK.lib;MSWSOCK.lib;MCore_x86WindowsReleaseMTDLL_VS2010.lib;EMotionFX_x86ReleaseMTDLL_VS2010.lib;Opcode_Release.lib;tinyxml2.lib;forksdk.lib;libGraphiTEAscii_x86_mt_dx9_v100.lib;libtcmalloc_minimal_x86_md_v140.lib;libprotobuf_x86_mt_v100.lib;foundation_x86_mt_v100.lib;network_x86_mt_v100.lib;framework_x86_mt_v100.lib;database_x86_mt_v100.lib;message.statistics_x86_mt_v100.lib;statistics_x86_mt_v100.lib;msvcrt.lib;LIBCMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;LIBCMT.lib</IgnoreSpecificDefaultLibraries>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='FInal Release_xignCode|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;NEXONGLMCLIENT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../ExternLib/GameLogManager</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>../ExternLib/GameLogManager/lib;../ExternLib/boost/stage86/lib;../ExternLib/Unicows;../ExternLib/EMotionFX3_9/Core/Bin;../ExternLib/EMotionFX3_9/Bin;../ExternLib/Core/Bin;../ExternLib/FMOD/api/lib;../ExternLib/Zlib/Bin;../ExternLib/Blowfish/Bin;../ExternLib/FreeType/Lib;../ExternLib/XTrap;../ExternLib/Opcode/Bin;../ExternLib/GraphiTE/Source/lib;../ExternLib/tinyxml2/lib;../ExternLib/VLD/lib;../ExternLib/SpeedTree/Lib/Windows/VC10;../ExternLib/google/tcmalloc/lib;../ExternLib/PerfSdk/lib;../ExternLib/logging_apache/apr/lib;../ExternLib/logging_apache/apr-util/lib;../ExternLib/logging_apache/apr-util/xml/expat/lib;../ExternLib/ForkParticle/lib;../ExternLib/google/protobuf/lib;../lib;../ExternLib/DirectX9/Lib;../imcDebug/lib;../ExternLib/tinyxml/lib;../ExternLib/FMOD/apidesigner/lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>winmm.lib;version.lib;nxgsm_static.lib;odbc32.lib;dbghelp.lib;odbccp32.lib;zlibstat_release.lib;imm32.lib;unicows.lib;fmodex_vc.lib;fmod_event.lib;dinput8.lib;dxguid.lib;wininet.lib;ws2_32.lib;d3dx9.lib;d3d9.lib;NVPerfSDK.lib;MSWSOCK.lib;MCore_x86WindowsReleaseMTDLL_VS2010.lib;EMotionFX_x86ReleaseMTDLL_VS2010.lib;Opcode_Release.lib;tinyxml2.lib;libapr-1_x86_mt_v100.lib;libaprutil-1_x86_mt_v100.lib;libxml_x86_mt_v100.lib;libfreetype_x86_mt_v100.lib;forksdk.lib;libGraphiTEAscii_x86_mt_dx9_v100.lib;libtcmalloc_minimal_x86_mt_v100.lib;libprotobuf_x86_mt_v100.lib;foundation_x86_mt_v100.lib;network_x86_mt_v100.lib;framework_x86_mt_v100.lib;database_x86_mt_v100.lib;message.statistics_x86_mt_v100.lib;statistics_x86_mt_v100.lib;msvcrt.lib;LIBCMT.lib;imcDebug_Release.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;LIBCMT.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ClientLogWriter.h" />
+    <ClInclude Include="NexonGLMClient.h" />
+    <ClInclude Include="NGSClient.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ClientLogWriter.cpp" />
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='FInal Release_xignCode|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='FInal Release_xignCode|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="NexonGLMClient.cpp" />
+    <ClCompile Include="NGSClient.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='FInal Release_xignCode|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
