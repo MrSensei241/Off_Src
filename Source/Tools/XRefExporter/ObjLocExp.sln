@@ -1,0 +1,42 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ObjLocExp", "ObjLocExp.vcproj", "{4C5B60EA-F510-4634-8B46-552A7AB06A4B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{22B34556-EDEB-400C-A902-BDF329A22E9B} = {22B34556-EDEB-400C-A902-BDF329A22E9B}
+		{F4367ACA-D6B8-4637-A77F-4230687CBCBC} = {F4367ACA-D6B8-4637-A77F-4230687CBCBC}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "imclib", "..\..\imclib\source\imclib.vcproj", "{F4367ACA-D6B8-4637-A77F-4230687CBCBC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "imcCore", "..\..\imcCore\source\imcCore.vcproj", "{22B34556-EDEB-400C-A902-BDF329A22E9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Final Release|Win32 = Final Release|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C5B60EA-F510-4634-8B46-552A7AB06A4B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4C5B60EA-F510-4634-8B46-552A7AB06A4B}.Debug|Win32.Build.0 = Debug|Win32
+		{4C5B60EA-F510-4634-8B46-552A7AB06A4B}.Final Release|Win32.ActiveCfg = Release|Win32
+		{4C5B60EA-F510-4634-8B46-552A7AB06A4B}.Final Release|Win32.Build.0 = Release|Win32
+		{4C5B60EA-F510-4634-8B46-552A7AB06A4B}.Release|Win32.ActiveCfg = Release|Win32
+		{4C5B60EA-F510-4634-8B46-552A7AB06A4B}.Release|Win32.Build.0 = Release|Win32
+		{F4367ACA-D6B8-4637-A77F-4230687CBCBC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F4367ACA-D6B8-4637-A77F-4230687CBCBC}.Debug|Win32.Build.0 = Debug|Win32
+		{F4367ACA-D6B8-4637-A77F-4230687CBCBC}.Final Release|Win32.ActiveCfg = Final Release|Win32
+		{F4367ACA-D6B8-4637-A77F-4230687CBCBC}.Final Release|Win32.Build.0 = Final Release|Win32
+		{F4367ACA-D6B8-4637-A77F-4230687CBCBC}.Release|Win32.ActiveCfg = Release|Win32
+		{F4367ACA-D6B8-4637-A77F-4230687CBCBC}.Release|Win32.Build.0 = Release|Win32
+		{22B34556-EDEB-400C-A902-BDF329A22E9B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{22B34556-EDEB-400C-A902-BDF329A22E9B}.Debug|Win32.Build.0 = Debug|Win32
+		{22B34556-EDEB-400C-A902-BDF329A22E9B}.Final Release|Win32.ActiveCfg = Release|Win32
+		{22B34556-EDEB-400C-A902-BDF329A22E9B}.Final Release|Win32.Build.0 = Release|Win32
+		{22B34556-EDEB-400C-A902-BDF329A22E9B}.Release|Win32.ActiveCfg = Release|Win32
+		{22B34556-EDEB-400C-A902-BDF329A22E9B}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
