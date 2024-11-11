@@ -1,0 +1,80 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "Mfc3dTest"=.\Mfc3dTest.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name imc3d
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name imclib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name imcdbg
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "imc3d"=..\..\imcclientlib\3d\imc3d.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name imclib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "imcdbg"=..\..\imcdbg\imcdbg.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "imclib"=..\..\imclib\source\imclib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name imcdbg
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+
