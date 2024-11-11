@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="FInal Release|Win32">
+      <Configuration>FInal Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D5C5FDD5-3856-404C-BA41-2D1770AD027F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>NexonSSOClient</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='FInal Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='FInal Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>../lib</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='FInal Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\lib\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;NEXONSSOCLIENT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../include;../ExternLib/boost;../ExternLib/CYClientSDK/include;../ExternLib/CYPTSDK/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalOptions>-Zm300 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../ExternLib/CYClientSDK/lib/Win32_MDd;../ExternLib/boost/stage86/lib;../ExternLib/CYPTSDK/lib/Win32_MDd;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>cJSON_Win32_MDd.lib;curl_Win32_MDd.lib;CYClientSDK_Win32_MDd.lib;iLOG3_Win32_MDd.lib;wldap32.lib;libCTUClient_15_Win32_MDd.lib;CYPtSDK_Win32_MDd.lib;libCTUServer_15_Win32_MDd.lib;odbc32.lib;odbccp32.lib;Winmm.lib;ws2_32.lib;shlwapi.lib;dbghelp.lib;MSWSOCK.lib;wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>wldap32.lib;cJSON_Win32_MDd.lib;curl_Win32_MDd.lib;iLOG3_Win32_MDd.lib;CYClientSDK_Win32_MDd.lib;CYPtSDK_Win32_MDd.lib;libCTUClient_15_Win32_MDd.lib;libCTUServer_15_Win32_MDd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../ExternLib/CYClientSDK/lib/Win32_MDd;../ExternLib/boost/stage86/lib;../ExternLib/CYPTSDK/lib/Win32_MDd;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;NEXONSSOCLIENT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../ExternLib/CYClientSDK/include;../ExternLib/CYPTSDK/include;../ExternLib/boost;../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4100;4819;4800;</DisableSpecificWarnings>
+      <TreatSpecificWarningsAsErrors>4717;4189;4130;4189;4100;4701;4389;4245;4238;4018;</TreatSpecificWarningsAsErrors>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>../ExternLib/GameLogManager/lib;../ExternLib/boost/stage86/lib;../ExternLib/Unicows;../ExternLib/EMotionFX3_9/Core/Bin;../ExternLib/EMotionFX3_9/Bin;../ExternLib/Core/Bin;../ExternLib/FMOD/api/lib;../ExternLib/Zlib/Bin;../ExternLib/Blowfish/Bin;../ExternLib/FreeType/Lib;../ExternLib/XTrap;../ExternLib/Opcode/Bin;../ExternLib/GraphiTE/Source/lib;../ExternLib/tinyxml2/lib;../ExternLib/VLD/lib;../ExternLib/SpeedTree/Lib/Windows/VC10;../ExternLib/google/tcmalloc/lib;../ExternLib/PerfSdk/lib;../ExternLib/logging_apache/apr/lib;../ExternLib/logging_apache/apr-util/lib;../ExternLib/logging_apache/apr-util/xml/expat/lib;../ExternLib/ForkParticle/lib;../ExternLib/google/protobuf/lib;../lib;../ExternLib/DirectX9/Lib;../imcDebug/lib;../ExternLib/tinyxml/lib;../ExternLib/FMOD/apidesigner/lib;../ExternLib/CYClientSDK/lib/Win32_MT</AdditionalLibraryDirectories>
+      <AdditionalDependencies>winmm.lib;version.lib;nxgsm_static.lib;odbc32.lib;dbghelp.lib;odbccp32.lib;zlibstat_release.lib;imm32.lib;unicows.lib;fmodex_vc.lib;fmod_event.lib;dinput8.lib;dxguid.lib;wininet.lib;ws2_32.lib;d3dx9.lib;d3d9.lib;NVPerfSDK.lib;MSWSOCK.lib;MCore_x86WindowsReleaseMTDLL_VS2010.lib;EMotionFX_x86ReleaseMTDLL_VS2010.lib;Opcode_Release.lib;tinyxml2.lib;libapr-1_x86_mt_v100.lib;libaprutil-1_x86_mt_v100.lib;libxml_x86_mt_v100.lib;libfreetype_x86_mt_v100.lib;forksdk.lib;libGraphiTEAscii_x86_mt_dx9_v100.lib;libtcmalloc_minimal_x86_mt_v100.lib;libprotobuf_x86_mt_v100.lib;foundation_x86_mt_v100.lib;network_x86_mt_v100.lib;framework_x86_mt_v100.lib;database_x86_mt_v100.lib;message.statistics_x86_mt_v100.lib;statistics_x86_mt_v100.lib;msvcrt.lib;LIBCMT.lib;imcDebug_Release.lib;cJSON_Win32_MT.lib;curl_Win32_MT.lib;CYClientSDK_Win32_MT.lib;iLOG3_Win32_MT.lib;wldap32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;LIBCMT.lib</IgnoreSpecificDefaultLibraries>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>wldap32.lib;cJSON_Win32_MD.lib;curl_Win32_MD.lib;iLOG3_Win32_MD.lib;CYClientSDK_Win32_MD.lib;CYPtSDK_Win32_MD.lib;libCTUClient_15_Win32_MD.lib;libCTUServer_15_Win32_MD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>../ExternLib/CYClientSDK/lib/Win32_MD;../ExternLib/boost/stage86/lib;../ExternLib/CYPTSDK/lib/Win32_MD;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='FInal Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;NEXONSSOCLIENT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../Include;../ExternLib/boost;../ExternLib/CYClientSDK/include;../ExternLib/CYPTSDK/include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>../ExternLib/GameLogManager/lib;../ExternLib/boost/stage86/lib;../ExternLib/Unicows;../ExternLib/EMotionFX3_9/Core/Bin;../ExternLib/EMotionFX3_9/Bin;../ExternLib/Core/Bin;../ExternLib/FMOD/api/lib;../ExternLib/Zlib/Bin;../ExternLib/Blowfish/Bin;../ExternLib/FreeType/Lib;../ExternLib/XTrap;../ExternLib/Opcode/Bin;../ExternLib/GraphiTE/Source/lib;../ExternLib/tinyxml2/lib;../ExternLib/VLD/lib;../ExternLib/SpeedTree/Lib/Windows/VC10;../ExternLib/google/tcmalloc/lib;../ExternLib/PerfSdk/lib;../ExternLib/logging_apache/apr/lib;../ExternLib/logging_apache/apr-util/lib;../ExternLib/logging_apache/apr-util/xml/expat/lib;../ExternLib/ForkParticle/lib;../ExternLib/google/protobuf/lib;../lib;../ExternLib/DirectX9/Lib;../imcDebug/lib;../ExternLib/tinyxml/lib;../ExternLib/FMOD/apidesigner/lib;../ExternLib/CYClientSDK/lib/Win32_MT</AdditionalLibraryDirectories>
+      <AdditionalDependencies>winmm.lib;version.lib;nxgsm_static.lib;odbc32.lib;dbghelp.lib;odbccp32.lib;zlibstat_release.lib;imm32.lib;unicows.lib;fmodex_vc.lib;fmod_event.lib;dinput8.lib;dxguid.lib;wininet.lib;ws2_32.lib;d3dx9.lib;d3d9.lib;NVPerfSDK.lib;MSWSOCK.lib;MCore_x86WindowsReleaseMTDLL_VS2010.lib;EMotionFX_x86ReleaseMTDLL_VS2010.lib;Opcode_Release.lib;tinyxml2.lib;libapr-1_x86_mt_v100.lib;libaprutil-1_x86_mt_v100.lib;libxml_x86_mt_v100.lib;libfreetype_x86_mt_v100.lib;forksdk.lib;libGraphiTEAscii_x86_mt_dx9_v100.lib;libtcmalloc_minimal_x86_mt_v100.lib;libprotobuf_x86_mt_v100.lib;foundation_x86_mt_v100.lib;network_x86_mt_v100.lib;framework_x86_mt_v100.lib;database_x86_mt_v100.lib;message.statistics_x86_mt_v100.lib;statistics_x86_mt_v100.lib;msvcrt.lib;LIBCMT.lib;imcDebug_Release.lib;cJSON_Win32_MT.lib;curl_Win32_MT.lib;CYClientSDK_Win32_MT.lib;iLOG3_Win32_MT.lib;wldap32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;LIBCMT.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalDependencies>wldap32.lib;cJSON_Win32_MD.lib;curl_Win32_MD.lib;iLOG3_Win32_MD.lib;CYClientSDK_Win32_MD.lib;CYPtSDK_Win32_MD.lib;libCTUClient_15_Win32_MD.lib;libCTUServer_15_Win32_MD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../ExternLib/CYClientSDK/lib/Win32_MD;../ExternLib/boost/stage86/lib;../ExternLib/CYPTSDK/lib/Win32_MD;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CTUFlag.h" />
+    <ClInclude Include="CyouBarrackServer.h" />
+    <ClInclude Include="CyouCallbackInfo.h" />
+    <ClInclude Include="CyouCTUTypeDef.h" />
+    <ClInclude Include="CyouGlobalServer.h" />
+    <ClInclude Include="CyouLoginInfo.h" />
+    <ClInclude Include="CyouNotify.h" />
+    <ClInclude Include="CyouServer.h" />
+    <ClInclude Include="CyouStartGameAuth.h" />
+    <ClInclude Include="CyouTypeDefine.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TransferTypeDef.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CyouBarrackServer.cpp" />
+    <ClCompile Include="CyouCallbackInfo.cpp" />
+    <ClCompile Include="CyouGlobalServer.cpp" />
+    <ClCompile Include="CyouLoginInfo.cpp" />
+    <ClCompile Include="CyouNotify.cpp" />
+    <ClCompile Include="CyouServer.cpp" />
+    <ClCompile Include="CyouStartGameAuth.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='FInal Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
