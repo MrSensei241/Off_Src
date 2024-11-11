@@ -1,0 +1,241 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Updater.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_UPDATER_DIALOG DIALOGEX 0, 0, 291, 308
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "굴림", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_SHOCKWAVEFLASH,
+                    "{D27CDB6E-AE6D-11CF-96B8-444553540000}",NOT WS_VISIBLE | 
+                    WS_TABSTOP,0,0,224,230
+END
+
+IDD_NOTICE DIALOGEX 0, 0, 234, 116
+STYLE DS_SETFONT | WS_CHILD
+FONT 10, "System", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_EXPLORER,"{8856F961-340A-11D0-A96B-00C04FD705A2}",
+                    WS_TABSTOP,7,7,205,93
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "FileDescription", "Updater MFC 응용 프로그램"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "Updater"
+            VALUE "LegalCopyright", "Copyright (C) 2006"
+            VALUE "OriginalFilename", "Updater.EXE"
+            VALUE "ProductName", "Updater 응용 프로그램"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_UPDATER_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 290
+        BOTTOMMARGIN, 306
+    END
+
+    IDD_NOTICE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 109
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_UPDATER_DIALOG DLGINIT
+BEGIN
+    IDC_SHOCKWAVEFLASH, 0x376, 542, 0
+0x0000, 0x0000, 0x5567, 0x5566, 0x0710, 0x0000, 0x2884, 0x0000, 0x23a8, 
+0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0008, 0x009e, 0x0000, 0x0043, 
+0x003a, 0x005c, 0x0044, 0x006f, 0x0063, 0x0075, 0x006d, 0x0065, 0x006e, 
+0x0074, 0x0073, 0x0020, 0x0061, 0x006e, 0x0064, 0x0020, 0x0053, 0x0065, 
+0x0074, 0x0074, 0x0069, 0x006e, 0x0067, 0x0073, 0x005c, 0x0041, 0x0064, 
+0x006d, 0x0069, 0x006e, 0x0069, 0x0073, 0x0074, 0x0072, 0x0061, 0x0074, 
+0x006f, 0x0072, 0x005c, 0x004d, 0x0079, 0x0020, 0x0044, 0x006f, 0x0063, 
+0x0075, 0x006d, 0x0065, 0x006e, 0x0074, 0x0073, 0x005c, 0xbc1b, 0xc740, 
+0x0020, 0xd30c, 0xc77c, 0x005c, 0xd328, 0xce58, 0xd074, 0xb77c, 0xc774, 
+0xc5b8, 0xd2b8, 0x0020, 0xad00, 0xb828, 0x005c, 0x006e, 0x0065, 0x0077, 
+0x0036, 0x002e, 0x0073, 0x0077, 0x0066, 0x0000, 0x0008, 0x009e, 0x0000, 
+0x0043, 0x003a, 0x005c, 0x0044, 0x006f, 0x0063, 0x0075, 0x006d, 0x0065, 
+0x006e, 0x0074, 0x0073, 0x0020, 0x0061, 0x006e, 0x0064, 0x0020, 0x0053, 
+0x0065, 0x0074, 0x0074, 0x0069, 0x006e, 0x0067, 0x0073, 0x005c, 0x0041, 
+0x0064, 0x006d, 0x0069, 0x006e, 0x0069, 0x0073, 0x0074, 0x0072, 0x0061, 
+0x0074, 0x006f, 0x0072, 0x005c, 0x004d, 0x0079, 0x0020, 0x0044, 0x006f, 
+0x0063, 0x0075, 0x006d, 0x0065, 0x006e, 0x0074, 0x0073, 0x005c, 0xbc1b, 
+0xc740, 0x0020, 0xd30c, 0xc77c, 0x005c, 0xd328, 0xce58, 0xd074, 0xb77c, 
+0xc774, 0xc5b8, 0xd2b8, 0x0020, 0xad00, 0xb828, 0x005c, 0x006e, 0x0065, 
+0x0077, 0x0036, 0x002e, 0x0073, 0x0077, 0x0066, 0x0000, 0x0008, 0x000e, 
+0x0000, 0x0057, 0x0069, 0x006e, 0x0064, 0x006f, 0x0077, 0x0000, 0x000b, 
+0xffff, 0x000b, 0xffff, 0x0008, 0x000a, 0x0000, 0x0048, 0x0069, 0x0067, 
+0x0068, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x000b, 0x0000, 0x0008, 
+0x0002, 0x0000, 0x0000, 0x0008, 0x000e, 0x0000, 0x0061, 0x006c, 0x0077, 
+0x0061, 0x0079, 0x0073, 0x0000, 0x0008, 0x0010, 0x0000, 0x004e, 0x006f, 
+0x0053, 0x0063, 0x0061, 0x006c, 0x0065, 0x0000, 0x000b, 0x0000, 0x000b, 
+0x0000, 0x0008, 0x000e, 0x0000, 0x0030, 0x0030, 0x0030, 0x0030, 0x0030, 
+0x0031, 0x0000, 0x0008, 0x0000, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 
+0x000d, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x000b, 0x0001, 0x000b, 0x0000, 0x0008, 0x0000, 0x0000, 0x0003, 0x0000, 
+0x0000, 
+    0
+END
+
+IDD_NOTICE DLGINIT
+BEGIN
+    IDC_EXPLORER, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x2a60, 0x0000, 0x1339, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_LOGO                ICON                    "res\\logo.ico"
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\Updater.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

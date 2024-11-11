@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Updater", "Updater\Updater.vcxproj", "{884B9F6D-C0F2-486A-BE71-F35B58C5FCBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{884B9F6D-C0F2-486A-BE71-F35B58C5FCBC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{884B9F6D-C0F2-486A-BE71-F35B58C5FCBC}.Debug|Win32.Build.0 = Debug|Win32
+		{884B9F6D-C0F2-486A-BE71-F35B58C5FCBC}.Release|Win32.ActiveCfg = Release|Win32
+		{884B9F6D-C0F2-486A-BE71-F35B58C5FCBC}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+EndGlobal

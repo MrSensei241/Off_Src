@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by aousee (IMCGames Co., Ltd) -->
+<Config>
+	<URL Key="Revisions" Value="http://ge.nefficient.co.kr/ge/patch/auto/testserver/"/>
+	<URL Key="Notice" Value="http://ge.hanbiton.com/patch_notify.asp"/>
+	<URL Key="Home" Value="www.granadoespada.com"/>
+	<String Key="Checking" Value="검사중..."/>
+	<String Key="Prepairing" Value="준비중..."/>
+	<String Key="Downloading" Value="받는중..."/>
+	<String Key="Updating" Value="갱신중..."/>
+	<String Key="Repairing" Value="복구중..."/>
+	<String Key="Arranging" Value="정리중..."/>
+	<String Key="Complete" Value="완료"/>
+	<String Key="Fail" Value="실패"/>
+	<String Key="Close" Value="닫기"/>
+	<String Key="Cancel" Value="취소"/>
+	<String Key="Start" Value="시작"/>
+	<String Key="DirectlyRun" Value="완료시 바로시작"/>
+	<String Key="WindowMode" Value="윈도우모드로 시작"/>
+	<String Key="CancelQuestion" Value="취소하시겠습니까?"/>
+	<String Key="Option" Value="설정"/>
+	<String Key="Update" Value="갱신"/>
+	<String Key="Block_msnshell" Value="msnshell.exe"/>
+	<String Key="Notice_msnshell" Value="msnshell.exe 프로그램이 윈도우에서 실행되고 있습니다. 업데이터 에러가 발생할 수 있으니 msnshell.exe를 제거해 주십시오."/>
+	<String Key="UpdaterConfigXMLNotExist" Value="updater.config.xml 파일을 열 수 없습니다. 파일이 손상되었거나 지워졌을 수 있으니 재설치 하시기 바랍니다."/>
+	<String Key="UpdaterConfigXMLError" Value="잘못된 updater.config.xml 파일 입니다. 파일이 손상되었거나 지워졌을 수 있으니 재설치 하시기 바랍니다."/>	
+	<String Key="UpdaterRevisionTxtNotExist" Value="updater.revision.txt 파일이 없습니다. 파일이 손상되었거나 지워졌을 수 있으니 재설치 하시기 바랍니다."/>
+	<String Key="FailedFlashPlayerInit" Value="Flash Player 생성을 실패했습니다. 다시 실행시켜 주십시오."/>	
+	<String Key="DuplicatedRunImpossible" Value="그라나도 에스파다는 중복실행 되지 않습니다."/>	
+	<String Key="CannotRunGe_exe" Value="release/ge.exe 파일을 실행할 수 없습니다. 파일이 손상되었거나 지워졌을 수 있으니 재설치 하시기 바랍니다."/>	
+	<String Key="UpdaterOptionXMLError" Value="잘못된 updater.option.xml 파일 입니다. 파일이 손상되었거나 지워졌을 수 있으니 재설치 하시기 바랍니다."/>	
+	<String Key="CannotOpenUpdaterOptionXML" Value="updater.option.xml 파일을 열 수 없습니다. 파일이 손상되었거나 지워졌을 수 있으니 재설치 하시기 바랍니다."/>
+	<String Key="PrefixError" Value="파일 변환중 에러가 발생 했습니다. 다시 실행시켜 주십시오."/>
+	<String Key="CannotOpenFlashOCX" Value="flash.ocx 파일을 찾을 수 없습니다. 파일이 손상되었거나 지워졌을 수 있으니 재설치 하시기 바랍니다."/>
+	<String Key="FailedConnectServer" Value="다운로드 서버 연결에 실패 했습니다. 다시 실행시켜 주십시오."/>
+	<String Key="FailedDownLoadList" Value="다운로드 목록 받기 실패 했습니다. 다시 실행시켜 주십시오."/>	
+	<String Key="FailedAnalysisDownLoadList" Value="다운로드 목록 분석에 실패 했습니다. 다시 실행시켜 주십시오."/>
+	<String Key="FailedDownLoadFile" Value="파일 다운로드가 실패 했습니다. 다시 실행시켜 주십시오."/>
+	<String Key="FailedUpdateFile" Value="파일 갱신이 실패 했습니다. 다시 실행시켜 주십시오."/>
+</Config>
