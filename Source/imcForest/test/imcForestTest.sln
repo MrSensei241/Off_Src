@@ -1,0 +1,94 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "imcForestTest", "imcForestTest.vcproj", "{95833739-8509-479F-84BB-D28ABFE5FA16}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5A7FB207-8090-4647-BD2C-466A84797E34} = {5A7FB207-8090-4647-BD2C-466A84797E34}
+		{22B34556-EDEB-400C-A902-BDF329A22E9B} = {22B34556-EDEB-400C-A902-BDF329A22E9B}
+		{E43C9B72-6776-4E0B-B435-11132E457CD2} = {E43C9B72-6776-4E0B-B435-11132E457CD2}
+		{F4367ACA-D6B8-4637-A77F-4230687CBCBC} = {F4367ACA-D6B8-4637-A77F-4230687CBCBC}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App", "App", "{0164D852-F1F4-40C6-9E30-A2BCE7209FD5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{98069654-C486-4A19-8D86-9E0D81630FA9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "imcCore", "..\..\imcCore\source\imcCore.vcproj", "{22B34556-EDEB-400C-A902-BDF329A22E9B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "imcd3d9", "..\..\imcClientLib\imcd3d9\source\imcd3d9.vcproj", "{E43C9B72-6776-4E0B-B435-11132E457CD2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "imcForest", "..\source\imcForest.vcproj", "{5A7FB207-8090-4647-BD2C-466A84797E34}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "imclib", "..\..\imclib\source\imclib.vcproj", "{F4367ACA-D6B8-4637-A77F-4230687CBCBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		dll_debug|Win32 = dll_debug|Win32
+		dll_release|Win32 = dll_release|Win32
+		Final Release|Win32 = Final Release|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95833739-8509-479F-84BB-D28ABFE5FA16}.Debug|Win32.ActiveCfg = Debug|Win32
+		{95833739-8509-479F-84BB-D28ABFE5FA16}.Debug|Win32.Build.0 = Debug|Win32
+		{95833739-8509-479F-84BB-D28ABFE5FA16}.dll_debug|Win32.ActiveCfg = Debug|Win32
+		{95833739-8509-479F-84BB-D28ABFE5FA16}.dll_debug|Win32.Build.0 = Debug|Win32
+		{95833739-8509-479F-84BB-D28ABFE5FA16}.dll_release|Win32.ActiveCfg = Debug|Win32
+		{95833739-8509-479F-84BB-D28ABFE5FA16}.dll_release|Win32.Build.0 = Debug|Win32
+		{95833739-8509-479F-84BB-D28ABFE5FA16}.Final Release|Win32.ActiveCfg = Release|Win32
+		{95833739-8509-479F-84BB-D28ABFE5FA16}.Final Release|Win32.Build.0 = Release|Win32
+		{95833739-8509-479F-84BB-D28ABFE5FA16}.Release|Win32.ActiveCfg = Release|Win32
+		{95833739-8509-479F-84BB-D28ABFE5FA16}.Release|Win32.Build.0 = Release|Win32
+		{22B34556-EDEB-400C-A902-BDF329A22E9B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{22B34556-EDEB-400C-A902-BDF329A22E9B}.Debug|Win32.Build.0 = Debug|Win32
+		{22B34556-EDEB-400C-A902-BDF329A22E9B}.dll_debug|Win32.ActiveCfg = dll_debug|Win32
+		{22B34556-EDEB-400C-A902-BDF329A22E9B}.dll_debug|Win32.Build.0 = dll_debug|Win32
+		{22B34556-EDEB-400C-A902-BDF329A22E9B}.dll_release|Win32.ActiveCfg = dll_release|Win32
+		{22B34556-EDEB-400C-A902-BDF329A22E9B}.dll_release|Win32.Build.0 = dll_release|Win32
+		{22B34556-EDEB-400C-A902-BDF329A22E9B}.Final Release|Win32.ActiveCfg = Release|Win32
+		{22B34556-EDEB-400C-A902-BDF329A22E9B}.Final Release|Win32.Build.0 = Release|Win32
+		{22B34556-EDEB-400C-A902-BDF329A22E9B}.Release|Win32.ActiveCfg = Release|Win32
+		{22B34556-EDEB-400C-A902-BDF329A22E9B}.Release|Win32.Build.0 = Release|Win32
+		{E43C9B72-6776-4E0B-B435-11132E457CD2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E43C9B72-6776-4E0B-B435-11132E457CD2}.Debug|Win32.Build.0 = Debug|Win32
+		{E43C9B72-6776-4E0B-B435-11132E457CD2}.dll_debug|Win32.ActiveCfg = dll_debug|Win32
+		{E43C9B72-6776-4E0B-B435-11132E457CD2}.dll_debug|Win32.Build.0 = dll_debug|Win32
+		{E43C9B72-6776-4E0B-B435-11132E457CD2}.dll_release|Win32.ActiveCfg = dll_release|Win32
+		{E43C9B72-6776-4E0B-B435-11132E457CD2}.dll_release|Win32.Build.0 = dll_release|Win32
+		{E43C9B72-6776-4E0B-B435-11132E457CD2}.Final Release|Win32.ActiveCfg = Release|Win32
+		{E43C9B72-6776-4E0B-B435-11132E457CD2}.Final Release|Win32.Build.0 = Release|Win32
+		{E43C9B72-6776-4E0B-B435-11132E457CD2}.Release|Win32.ActiveCfg = Release|Win32
+		{E43C9B72-6776-4E0B-B435-11132E457CD2}.Release|Win32.Build.0 = Release|Win32
+		{5A7FB207-8090-4647-BD2C-466A84797E34}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5A7FB207-8090-4647-BD2C-466A84797E34}.Debug|Win32.Build.0 = Debug|Win32
+		{5A7FB207-8090-4647-BD2C-466A84797E34}.dll_debug|Win32.ActiveCfg = Debug|Win32
+		{5A7FB207-8090-4647-BD2C-466A84797E34}.dll_debug|Win32.Build.0 = Debug|Win32
+		{5A7FB207-8090-4647-BD2C-466A84797E34}.dll_release|Win32.ActiveCfg = Debug|Win32
+		{5A7FB207-8090-4647-BD2C-466A84797E34}.dll_release|Win32.Build.0 = Debug|Win32
+		{5A7FB207-8090-4647-BD2C-466A84797E34}.Final Release|Win32.ActiveCfg = Release|Win32
+		{5A7FB207-8090-4647-BD2C-466A84797E34}.Final Release|Win32.Build.0 = Release|Win32
+		{5A7FB207-8090-4647-BD2C-466A84797E34}.Release|Win32.ActiveCfg = Release|Win32
+		{5A7FB207-8090-4647-BD2C-466A84797E34}.Release|Win32.Build.0 = Release|Win32
+		{F4367ACA-D6B8-4637-A77F-4230687CBCBC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F4367ACA-D6B8-4637-A77F-4230687CBCBC}.Debug|Win32.Build.0 = Debug|Win32
+		{F4367ACA-D6B8-4637-A77F-4230687CBCBC}.dll_debug|Win32.ActiveCfg = dll_debug|Win32
+		{F4367ACA-D6B8-4637-A77F-4230687CBCBC}.dll_debug|Win32.Build.0 = dll_debug|Win32
+		{F4367ACA-D6B8-4637-A77F-4230687CBCBC}.dll_release|Win32.ActiveCfg = dll_release|Win32
+		{F4367ACA-D6B8-4637-A77F-4230687CBCBC}.dll_release|Win32.Build.0 = dll_release|Win32
+		{F4367ACA-D6B8-4637-A77F-4230687CBCBC}.Final Release|Win32.ActiveCfg = Final Release|Win32
+		{F4367ACA-D6B8-4637-A77F-4230687CBCBC}.Final Release|Win32.Build.0 = Final Release|Win32
+		{F4367ACA-D6B8-4637-A77F-4230687CBCBC}.Release|Win32.ActiveCfg = Release|Win32
+		{F4367ACA-D6B8-4637-A77F-4230687CBCBC}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{95833739-8509-479F-84BB-D28ABFE5FA16} = {0164D852-F1F4-40C6-9E30-A2BCE7209FD5}
+		{22B34556-EDEB-400C-A902-BDF329A22E9B} = {98069654-C486-4A19-8D86-9E0D81630FA9}
+		{E43C9B72-6776-4E0B-B435-11132E457CD2} = {98069654-C486-4A19-8D86-9E0D81630FA9}
+		{5A7FB207-8090-4647-BD2C-466A84797E34} = {98069654-C486-4A19-8D86-9E0D81630FA9}
+		{F4367ACA-D6B8-4637-A77F-4230687CBCBC} = {98069654-C486-4A19-8D86-9E0D81630FA9}
+	EndGlobalSection
+EndGlobal
