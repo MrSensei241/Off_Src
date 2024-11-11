@@ -1,0 +1,8 @@
+void			Open(const char* name, int argNum = -1);
+void			SetBasePath(const char* path);
+const char*		GetBasePath();
+
+int				GetFrameXMLCount();
+const char*		GetFrameXMLName(int index);
+
+BOOL			CheckChildDirectory();
