@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{01ECF356-8167-4108-8ADF-AEB2DAA9F971}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Dictionalization</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\..\bin\</OutDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+    <IncludePath>../../ExternLib/DirectX9/Include;$(IncludePath)</IncludePath>
+    <LibraryPath>../../ExternLib/DirectX9/Lib/x86;../../ExternLib/boost/stage86/lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\..\bin\</OutDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+    <IncludePath>$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;</IncludePath>
+    <LibraryPath>$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../geTable/include;../../ExternLib/tinyxml2;../../include/message/server/statistics;../../include/message;../../include;../../geclientlib/include;../../geclientshared/include;../../geShared/include;../../ExternLib/FreeType/include;../../geClientShared/include;../../geUI/include;../../ExternLib/FMOD/apidesigner/inc;../../ExternLib/FMOD/apiex/inc;../../geAiActor/include;../../geLanguagePack;../../ExternLib/VLD/Include;../../ExternLib/Blowfish;../../ExternLib/SCardAPI;../../gepacket/gepacket/include;../../gepacket/geclientpacket/include;../../externlib;../../imcclientlib/imcui/source;../../geDefine/include;../../imcServerLib/include;../../geServerShared/include;../../geServer/ZServerLib;../../geServer/ZServerBase/include;../../geServer/ZServerShared/include;../../geServer/ZserverDBCmd;../../gePacket/geServerPacket/include;../../geServer/ZServerLib/BindFunction;%(AdditionalIncludeDirectories);../../ExternLib;../../ExternLib/boost;../../ExternLib/DirectX9/include;../../geServer/ZServerLib/Module</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <OpenMPSupport>true</OpenMPSupport>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3dx9.lib;d3d9.lib;odbc32.lib;odbccp32.lib;Winmm.lib;ws2_32.lib;dbghelp.lib;MSWSOCK.lib;shlwapi.lib;tinyxml2d.lib;zlibstat_release.lib;Opcode_Release.lib;libapr-1_x86_mt_v100.lib;libaprutil-1_x86_mt_v100.lib;libxml_x86_mt_v100.lib;libtcmalloc_minimal_x86_mt_v100.lib;libprotobuf_x86_mt_v100.lib;msvcrt.lib;msvcmrt.lib;winmm.lib;imm32.lib;unicows.lib;fmodex_vc.lib;fmod_event.lib;dinput8.lib;dxguid.lib;wininet.lib;version.lib;NVPerfSDK.lib;MCore_x86WindowsReleaseMTDLL_VS2010.lib;EMotionFX_x86ReleaseMTDLL_VS2010.lib;libfreetype_x86_mt_v100.lib;forksdk.lib;libGraphiTEAscii_x86_mt_dx9_v100.lib;foundation_x86_mt_v100.lib;network_x86_mt_v100.lib;framework_x86_mt_v100.lib;database_x86_mt_v100.lib;message.statistics_x86_mt_v100.lib;statistics_x86_mt_v100.lib;LIBCMT.lib;imcDebug_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../ExternLib/boost/stage86/lib;../../ExternLib/Unicows;../../ExternLib/EMotionFX3_9/Core/Bin;../../ExternLib/EMotionFX3_9/Bin;../../ExternLib/Core/Bin;../../ExternLib/FMOD/apidesigner/lib;../../ExternLib/FMOD/apiex/lib;../../ExternLib/Zlib/Bin;../../ExternLib/Blowfish/Bin;../../ExternLib/FreeType/Lib;../../ExternLib/XTrap;../../ExternLib/Opcode/Bin;../../ExternLib/GraphiTE/Source/lib;../../ExternLib/tinyxml2/lib;../../ExternLib/VLD/lib;../../ExternLib/SpeedTree/Lib/Windows/VC10;../../ExternLib/google/tcmalloc/lib;../../ExternLib/PerfSdk/lib;../../ExternLib/logging_apache/apr/lib;../../ExternLib/logging_apache/apr-util/lib;../../ExternLib/logging_apache/apr-util/xml/expat/lib;../../ExternLib/ForkParticle/lib;../../ExternLib/google/protobuf/lib;../../lib;../../ExternLib/DirectX9/Lib;../../imcDebug/lib</AdditionalLibraryDirectories>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)$(TargetName)</OutputFile>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>../../geTable/include;../../ExternLib/tinyxml2;../../include/message/server/statistics;../../include/message;../../include;../../geclientlib/include;../../geclientshared/include;../../geShared/include;../../ExternLib/FreeType/include;../../geClientShared/include;../../geUI/include;../../ExternLib/FMOD/apidesigner/inc;../../ExternLib/FMOD/apiex/inc;../../geAiActor/include;../../geLanguagePack;../../ExternLib/VLD/Include;../../ExternLib/Blowfish;../../ExternLib/SCardAPI;../../gepacket/gepacket/include;../../gepacket/geclientpacket/include;../../externlib;../../imcclientlib/imcui/source;../../geDefine/include;../../imcServerLib/include;../../geServerShared/include;../../geServer/ZServerLib;../../geServer/ZServerBase/include;../../geServer/ZServerShared/include;../../geServer/ZserverDBCmd;../../gePacket/geServerPacket/include;../../geServer/ZServerLib/BindFunction;%(AdditionalIncludeDirectories);../../ExternLib;../../ExternLib/boost;../../ExternLib/DirectX9/include;../../geServer/ZServerLib/Module</AdditionalIncludeDirectories>
+      <OpenMPSupport>true</OpenMPSupport>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <AdditionalLibraryDirectories>../../ExternLib/boost/stage86/lib;../../ExternLib/Unicows;../../ExternLib/EMotionFX3_9/Core/Bin;../../ExternLib/EMotionFX3_9/Bin;../../ExternLib/Core/Bin;../../ExternLib/FMOD/apidesigner/lib;../../ExternLib/FMOD/apiex/lib;../../ExternLib/Zlib/Bin;../../ExternLib/Blowfish/Bin;../../ExternLib/FreeType/Lib;../../ExternLib/XTrap;../../ExternLib/Opcode/Bin;../../ExternLib/GraphiTE/Source/lib;../../ExternLib/tinyxml2/lib;../../ExternLib/VLD/lib;../../ExternLib/SpeedTree/Lib/Windows/VC10;../../ExternLib/google/tcmalloc/lib;../../ExternLib/PerfSdk/lib;../../ExternLib/logging_apache/apr/lib;../../ExternLib/logging_apache/apr-util/lib;../../ExternLib/logging_apache/apr-util/xml/expat/lib;../../ExternLib/ForkParticle/lib;../../ExternLib/google/protobuf/lib;../../lib;../../ExternLib/DirectX9/Lib;../../imcDebug/lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>d3dx9.lib;d3d9.lib;odbc32.lib;odbccp32.lib;Winmm.lib;ws2_32.lib;dbghelp.lib;MSWSOCK.lib;shlwapi.lib;tinyxml2.lib;zlibstat_release.lib;Opcode_Release.lib;libapr-1_x86_mt_v100.lib;libaprutil-1_x86_mt_v100.lib;libxml_x86_mt_v100.lib;libtcmalloc_minimal_x86_mt_v100.lib;libprotobuf_x86_mt_v100.lib;msvcrt.lib;msvcmrt.lib;winmm.lib;imm32.lib;unicows.lib;fmodex_vc.lib;fmod_event.lib;dinput8.lib;dxguid.lib;wininet.lib;version.lib;NVPerfSDK.lib;MCore_x86WindowsReleaseMTDLL_VS2010.lib;EMotionFX_x86ReleaseMTDLL_VS2010.lib;libfreetype_x86_mt_v100.lib;forksdk.lib;libGraphiTEAscii_x86_mt_dx9_v100.lib;foundation_x86_mt_v100.lib;network_x86_mt_v100.lib;framework_x86_mt_v100.lib;database_x86_mt_v100.lib;message.statistics_x86_mt_v100.lib;statistics_x86_mt_v100.lib;LIBCMT.lib;imcDebug_Release.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseDic.h" />
+    <ClInclude Include="DicMerger.h" />
+    <ClInclude Include="Dictionalization.h" />
+    <ClInclude Include="GlyphExporter.h" />
+    <ClInclude Include="GlyphParser.h" />
+    <ClInclude Include="LuaConvertor.h" />
+    <ClInclude Include="MakeLuaFromDic.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="WindowFrame.h" />
+    <ClInclude Include="XMLConvertor.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BaseDic.cpp" />
+    <ClCompile Include="DicMerger.cpp" />
+    <ClCompile Include="Dictionalization.cpp" />
+    <ClCompile Include="GlyphExporter.cpp" />
+    <ClCompile Include="GlyphParser.cpp" />
+    <ClCompile Include="LuaConvertor.cpp" />
+    <ClCompile Include="MakeLuaFromDic.cpp" />
+    <ClCompile Include="WinMain.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="WindowFrame.cpp" />
+    <ClCompile Include="XMLConvertor.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\imcClientLib\imcDic\imcDic.vcxproj">
+      <Project>{5b95295c-9974-4e80-9b03-d062b61f5215}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\imcCore\source\imcCore.vcxproj">
+      <Project>{22b34556-edeb-400c-a902-bdf329a22e9b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\imcFileSys\imcFileSys.vcxproj">
+      <Project>{b07c7ad8-7061-4e0b-aa1a-9159f0e4d276}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\imcIES\source\imcIES.vcxproj">
+      <Project>{2351fb45-496f-4a41-ac5f-f6ce30a7d521}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\imcIpf\source\imcIpf.vcxproj">
+      <Project>{e0cb2dda-85aa-414e-a21d-4a13985c5251}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\imclib\Source\imclib.vcxproj">
+      <Project>{78d5f82a-da2c-449a-80da-04467432ec1f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\imcSMTP\source\imcSMTP.vcxproj">
+      <Project>{d690c04d-5e73-4c74-8a74-6d17627eff8a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\imcXml\source\imcXml.vcxproj">
+      <Project>{63eb8172-0004-4831-b72f-548e28298c50}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
