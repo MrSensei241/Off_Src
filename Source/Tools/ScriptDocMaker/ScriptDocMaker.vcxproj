@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{1BA94185-C72E-4233-BA31-2F986C3F015F}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\..\bin\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>ScriptDocMaker</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>../../imclib/include;../../geShared/include;../../imcIES/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Debug\ScriptDocMaker.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\Debug\ScriptDocMaker.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\ScriptDocMaker.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>../../../bin/ScriptDocMaker.exe</OutputFile>
+      <AdditionalLibraryDirectories>../../ExternLib/Zlib/Bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>../../imclib/include;../../geShared/include;../../imcIES/include;../../imcFileSys/include;../../ExternLib/boost;../../ExternLib/DirectX9/include;../../include;../../externlib/tinyxml2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\ScriptDocMaker.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\Release\ScriptDocMaker.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\ScriptDocMaker.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
+      <AdditionalLibraryDirectories>../../ExternLib/boost/stage86/lib;../../ExternLib/Unicows;../../ExternLib/EMotionFX3_9/Core/Bin;../../ExternLib/EMotionFX3_9/Bin;../../ExternLib/Core/Bin;../../ExternLib/FMOD/apidesigner/lib;../../ExternLib/FMOD/apiex/lib;../../ExternLib/Zlib/Bin;../../ExternLib/Blowfish/Bin;../../ExternLib/FreeType/Lib;../../ExternLib/XTrap;../../ExternLib/Opcode/Bin;../../ExternLib/GraphiTE/Source/lib;../../ExternLib/tinyxml2/lib;../../ExternLib/VLD/lib;../../ExternLib/SpeedTree/Lib/Windows/VC10;../../ExternLib/google/tcmalloc/lib;../../ExternLib/PerfSdk/lib;../../ExternLib/logging_apache/apr/lib;../../ExternLib/logging_apache/apr-util/lib;../../ExternLib/logging_apache/apr-util/xml/expat/lib;../../ExternLib/ForkParticle/lib;../../ExternLib/google/protobuf/lib;../../lib;../../ExternLib/DirectX9/Lib;../../imcDebug/lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>winmm.lib;odbc32.lib;dbghelp.lib;odbccp32.lib;zlibstat_release.lib;imm32.lib;unicows.lib;fmodex_vc.lib;fmod_event.lib;dinput8.lib;dxguid.lib;wininet.lib;d3dx9.lib;d3d9.lib;version.lib;NVPerfSDK.lib;MSWSOCK.lib;MCore_x86WindowsReleaseMTDLL_VS2010.lib;EMotionFX_x86ReleaseMTDLL_VS2010.lib;Opcode_Release.lib;tinyxml2.lib;libapr-1_x86_mt_v100.lib;libaprutil-1_x86_mt_v100.lib;libxml_x86_mt_v100.lib;libfreetype_x86_mt_v100.lib;forksdk.lib;libGraphiTEAscii_x86_mt_dx9_v100.lib;libtcmalloc_minimal_x86_mt_v100.lib;libprotobuf_x86_mt_v100.lib;foundation_x86_mt_v100.lib;network_x86_mt_v100.lib;framework_x86_mt_v100.lib;database_x86_mt_v100.lib;message.statistics_x86_mt_v100.lib;statistics_x86_mt_v100.lib;msvcrt.lib;LIBCMT.lib;imcDebug_Release.lib;shlwapi.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>libcpmt.lib;MSVCRT.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="FunctionExtracter.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="ScriptDocMaker.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FunctionExtracter.h" />
+    <ClInclude Include="StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\imcClientLib\imcDic\imcDic.vcxproj">
+      <Project>{5b95295c-9974-4e80-9b03-d062b61f5215}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\imcCore\source\imcCore.vcxproj">
+      <Project>{22b34556-edeb-400c-a902-bdf329a22e9b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\imcFileSys\imcFileSys.vcxproj">
+      <Project>{b07c7ad8-7061-4e0b-aa1a-9159f0e4d276}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\imcIES\source\imcIES.vcxproj">
+      <Project>{2351fb45-496f-4a41-ac5f-f6ce30a7d521}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\imcIpf\source\imcIpf.vcxproj">
+      <Project>{e0cb2dda-85aa-414e-a21d-4a13985c5251}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\imclib\source\imclib.vcxproj">
+      <Project>{f4367aca-d6b8-4637-a77f-4230687cbcbc}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\imcSMTP\source\imcSMTP.vcxproj">
+      <Project>{d690c04d-5e73-4c74-8a74-6d17627eff8a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\imcXml\source\imcXml.vcxproj">
+      <Project>{63eb8172-0004-4831-b72f-548e28298c50}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
